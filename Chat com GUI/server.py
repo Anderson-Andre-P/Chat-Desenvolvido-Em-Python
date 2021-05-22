@@ -22,7 +22,7 @@ def handle(client):
     while True:
         try:
             message = client.recv(1024)
-            print(f'{nicknames[clients.index(client)]} says {message}')
+            print(f'{nicknames[clients.index(client)]} disse {message}')
             broadcast(message)
         except:
             index = clients.index(client)
@@ -36,7 +36,7 @@ def handle(client):
 def receive():
     while True:
         client, address = server.accept()
-        print(f'Connected with {str(address)}!')
+        print(f'Conectado com {str(address)}!')
 
         client.send('NICK'.encode('utf-8'))
         nickname = client.recv(1024)
@@ -44,13 +44,13 @@ def receive():
         nicknames.append(nickname)
         clients.append(client)
 
-        print(f'Nickname of the client is {nickname}')
-        broadcast(f'{nickname} connected to the server!\n'.encode('utf-8'))
-        client.send('Connected to the server'.encode('utf-8'))
+        print(f'O nome do cliente é {nickname}')
+        broadcast(f'{nickname} conectado no servidor!\n'.encode('utf-8'))
+        client.send('Conectado no servidor'.encode('utf-8'))
 
         thread = threading.Thread(target=handle, args=(client,))
         thread.start()
 
 
-print('Server running...')
+print('Servidor rodando...')
 receive()
