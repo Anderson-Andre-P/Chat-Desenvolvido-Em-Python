@@ -22,4 +22,4 @@ Para executar o sistema com múltiplos usuários, você deve seguir as intruçõ
 2. Executar os clients depois.
 3. Fazer os passos 1 e 2 em terminais diferentes.
 
-Observação: o chat funciona com mais de dois usuários.
+Observação: o chat funciona com mais de dois usuários e para executar você precisa ter o Python e o Tkinter instalado.
