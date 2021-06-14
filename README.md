@@ -2,6 +2,8 @@
 
 Sistema de chat simples elaborado em Python com a utilização de sockets, threads e interface gráfica.
 
+![Demo](demo.png)
+
 ## Sobre o Chat Python
 
 Sistema de chat simples (TCP/IP) elaborado em Python com a utilização de sockets, threads e interface gráfica.
