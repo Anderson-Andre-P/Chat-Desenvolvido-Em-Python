@@ -12,12 +12,8 @@ O sistema foi desenvolvido na linguagem de programação Python (versão 3.8.5) 
 
 Para executar o sistema com múltiplos usuários, você deve seguir as intruções abaixo:
 
-1. Abrir a pasta onde você salvou os scripts server.py e client.py pelo terminal 3 vezes.
-2. No 1º terminal: execute o script server.py.
-3. No 2º terminal: execute o script client.py.
-4. Vai aparecer uma pequena janela onde você deve digitar um nome.
-5. No 3º terminal: execute o script client.py.
-6. Vai aparecer uma pequena janela onde você deve digitar um nome.
-7. Agora você pode trocar mensagens entre os dois usuários criados nos passos 3 e 5.
+1. Executar o servidor primeiro.
+2. Executar os clients depois.
+3. Fazer os passos 1 e 2 em terminais diferentes.
 
 Observação: o chat funciona com mais de dois usuários.
